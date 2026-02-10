@@ -1,0 +1,195 @@
+/* Page Header */
+.page-header-custom {
+    background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson-dark) 100%);
+    padding: 8rem 0 3rem;
+    margin-top: 70px;
+    color: white;
+}
+
+.page-header-custom h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+}
+
+.page-header-custom p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.page-header-custom .breadcrumb {
+    background: transparent;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.page-header-custom .breadcrumb-item a {
+    color: var(--beige-light);
+    text-decoration: none;
+}
+
+.page-header-custom .breadcrumb-item.active {
+    color: var(--pink);
+}
+
+.page-header-custom .breadcrumb-item + .breadcrumb-item::before {
+    color: var(--beige-light);
+}
+
+/* Main Section */
+.customize-section {
+    padding: 3rem 0;
+    background: var(--beige-light);
+}
+
+/* Section Cards */
+.section-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.section-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--crimson);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.section-card-title i {
+    color: var(--turquoise);
+}
+
+/* Flower Card */
+.flower-card {
+    background: white;
+    border: 2px solid var(--beige);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flower-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--turquoise);
+}
+
+.flower-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: var(--beige-light);
+}
+
+.flower-card-body {
+    padding: 1rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.flower-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.3rem;
+}
+
+.flower-color {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.flower-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--turquoise);
+    margin-bottom: 0.5rem;
+}
+
+.flower-stock {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.flower-stock.available {
+    color: var(--turquoise);
+}
+
+.flower-stock.low {
+    color: #ff9800;
+}
+
+.flower-stock.unavailable {
+    color: var(--crimson);
+}
+
+/* Select Button */
+.btn-add-flower {
+    background: var(--turquoise);
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.btn-add-flower:hover {
+    background: var(--turquoise-light);
+    transform: translateY(-2px);
+}
+
+.btn-add-flower:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Proceed to Checkout Button */
+.btn-place-order {
+    background: var(--crimson);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: all 0.35s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-place-order:hover:not(:disabled) {
+    background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson-dark) 100%);
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(122, 28, 41, 0.35);
+    color: white;
+}
+
+.btn-place-order:hover i {
+    transform: translateX(4px);
+    transition: 0.3s ease;
+}
+
+.btn-place-order:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
